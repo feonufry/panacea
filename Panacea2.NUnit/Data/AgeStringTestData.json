@@ -1,0 +1,137 @@
+﻿[
+  {
+    "testName": "Cannot create AS from negative days",
+    "testCategories": [ "Unit", "VR:AS:Days", "json" ],
+    "testCase": {
+      "input": -1,
+      "unit": "Days",
+      "exception": true
+    }
+  },
+  {
+    "testName": "Cannot create AS from zero days",
+    "testCategories": [ "Unit", "VR:AS:Days", "json" ],
+    "testCase": {
+      "input": 0,
+      "unit": "Days",
+      "exception": true
+    }
+  },
+  {
+    "testName": "Can create AS for 1 day",
+    "testCategories": [ "Unit", "VR:AS:Days", "json" ],
+    "testCase": {
+      "input": 1,
+      "unit": "Days",
+      "expected": "001D"
+    }
+  },
+  {
+    "testName": "Can create AS for days between 1 and 9",
+    "testCategories": [ "Unit", "VR:AS:Days", "json" ],
+    "testCase": {
+      "input": 7,
+      "unit": "Days",
+      "expected": "007D"
+    }
+  },
+  {
+    "testName": "Can create AS for days between 10 and 99",
+    "testCategories": [ "Unit", "VR:AS:Days", "json" ],
+    "testCase": {
+      "input": 23,
+      "unit": "Days",
+      "expected": "023D"
+    }
+  },
+  {
+    "testName": "Can create AS for days between 100 and 999",
+    "testCategories": [ "Unit", "VR:AS:Days", "json" ],
+    "testCase": {
+      "input": 456,
+      "unit": "Days",
+      "expected": "456D"
+    }
+  },
+  {
+    "testName": "Can create AS for 999 days",
+    "testCategories": [ "Unit", "VR:AS:Days", "json" ],
+    "testCase": {
+      "input": 999,
+      "unit": "Days",
+      "expected": "999D"
+    }
+  },
+  {
+    "testName": "Cannot create AS from days number above 1000",
+    "testCategories": [ "Unit", "VR:AS:Days", "json" ],
+    "testCase": {
+      "input": 1000,
+      "unit": "Days",
+      "exception": true
+    }
+  },
+  {
+    "testName": "Cannot create AS from negative weeks",
+    "testCategories": [ "Unit", "VR:AS:Weeks", "json" ],
+    "testCase": {
+      "input": -1,
+      "unit": "Weeks",
+      "exception": true
+    }
+  },
+  {
+    "testName": "Cannot create AS from zero weeks",
+    "testCategories": [ "Unit", "VR:AS:Weeks", "json" ],
+    "testCase": {
+      "input": 0,
+      "unit": "Weeks",
+      "exception": true
+    }
+  },
+  {
+    "testName": "Can create AS for 1 week",
+    "testCategories": [ "Unit", "VR:AS:Weeks", "json" ],
+    "testCase": {
+      "input": 1,
+      "unit": "Weeks",
+      "expected": "001W"
+    }
+  },
+  {
+    "testName": "Can create AS for weeks between 1 and 9",
+    "testCategories": [ "Unit", "VR:AS:Weeks", "json" ],
+    "testCase": {
+      "input": 7,
+      "unit": "Weeks",
+      "expected": "007W"
+    }
+  },
+  {
+    "testName": "Can create AS for weeks between 10 and 99",
+    "testCategories": [ "Unit", "VR:AS:Weeks", "json" ],
+    "testCase": {
+      "input": 23,
+      "unit": "Weeks",
+      "expected": "023W"
+    }
+  },
+  {
+    "testName": "Can create AS for weeks between 100 and 999",
+    "testCategories": [ "Unit", "VR:AS:Weeks", "json" ],
+    "testCase": {
+      "input": 456,
+      "unit": "Weeks",
+      "expected": "456W"
+    }
+  },
+  {
+    "testName": "Can create AS for 999 weeks",
+    "testCategories": [ "Unit", "VR:AS:Weeks", "json" ],
+    "testCase": {
+      "input": 999,
+      "unit": "Weeks",
+      "expected": "999W"
+    }
+  }
+]

@@ -1,0 +1,77 @@
+﻿[
+  {
+      "input": -1,
+      "unit": "Days",
+      "exception": true
+  },
+  {
+      "input": 0,
+      "unit": "Days",
+      "exception": true
+  },
+  {
+      "input": 1,
+      "unit": "Days",
+      "expected": "001D"
+  },
+  {
+      "input": 7,
+      "unit": "Days",
+      "expected": "007D"
+  },
+  {
+      "input": 23,
+      "unit": "Days",
+      "expected": "023D"
+  },
+  {
+      "input": 456,
+      "unit": "Days",
+      "expected": "456D"
+  },
+  {
+      "input": 999,
+      "unit": "Days",
+      "expected": "999D"
+  },
+  {
+      "input": 1000,
+      "unit": "Days",
+      "exception": true
+  },
+  {
+      "input": -1,
+      "unit": "Weeks",
+      "exception": true
+  },
+  {
+      "input": 0,
+      "unit": "Weeks",
+      "exception": true
+  },
+  {
+      "input": 1,
+      "unit": "Weeks",
+      "expected": "001W"
+  },
+  {
+      "input": 7,
+      "unit": "Weeks",
+      "expected": "007W"
+  },
+  {
+      "input": 23,
+      "unit": "Weeks",
+      "expected": "023W"
+  },
+  {
+      "input": 456,
+      "unit": "Weeks",
+      "expected": "456W"
+  },
+  {
+      "input": 999,
+      "unit": "Weeks",
+      "expected": "999W"
+  }
+]
